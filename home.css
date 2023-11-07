@@ -1,0 +1,304 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define body and default text styles */
+body {
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #ECF9F2;
+}
+
+/* Header styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 150px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+/* Hero styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.hero-content,
+.hero-image {
+    flex-basis: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+/* Main content and sidebar styles */
+.content,
+.articles,
+.sidebar {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+}
+.sidebar {
+    background-color: #fff; /* Adjust the background color if needed */
+    padding: 1rem;
+    border-radius: 8px; /* If there is a border radius */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow to the sidebar */
+    font-family: 'Arial', sans-serif; /* The font seems to be sans-serif, Arial is a common choice */
+}
+
+.content-section {
+    display: flex;
+    align-items: center; /* This will vertically center the items */
+    margin-bottom: 1rem; /* Adds space between content sections */
+}
+.sidebar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.newsletter {
+    background-color: #e9f5f5; /* The background color for the newsletter section */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* If the newsletter section has rounded corners */
+}
+
+.newsletter label {
+    display: inline-flex; /* Ensure the label is on its own line */
+    margin-bottom: 0.5rem; /* Space below the label */
+    font-size: 2rem; /* Larger font size for the label */
+    color: #333; /* Color for the label text */
+}
+
+.newsletter input[type="email"] {
+    width: 20%; /* Full width of the container */
+    padding: 0.5rem;
+    margin-bottom: 0.5rem; /* Space below the input field */
+    border: 1px solid #ccc; /* Border color for the input field */
+    border-radius: 4px; /* Rounded corners for the input field */
+}
+
+.about-image {
+    width: 50%; /* Adjust width as per the image's aspect ratio */
+    margin-right: 20px; /* Space between the image and text content */
+    border-radius: 8px; /* If the image has rounded corners */
+}
+
+.about {
+    width: 50%; /* Adjust text section width to match the image */
+}
+
+.about h3 {
+    color: #333; /* Color for the title text */
+    margin-bottom: 0.5rem; /* Space below the title */
+}
+
+.about p {
+    color: #666; /* Color for the paragraph */
+    font-size: 0.9rem; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+.article-slider,
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    overflow-x: auto;
+}
+
+.article-card {
+    margin: 0 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.article-card img {
+    width: 100%;
+    display: block;
+}
+
+.article-card h3 {
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.article-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Button styles */
+.btn-read-more,
+.btn-subscribe {
+    background-color: #89BE63;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-read-more:hover,
+.btn-subscribe:hover {
+    background-color: #e2e2e2;
+}
+
+/* Arrow styles for slider */
+.slide-arrow {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Footer styles */
+.site-footer,
+.footer-content {
+    background-color: #89BE63;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    padding: 20px;
+}
+
+.footer-content > div {
+    margin-bottom: 20px;
+    position: relative; /* Add relative positioning to hold the pseudo-element */
+}
+
+/* Add this to create the white borders between the sections */
+.footer-content > div:not(:last-child):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* border width */
+    background-color: #fff; /* border color */
+}
+/*copied footer*/
+
+/* footer styling */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #89BE63;
+    color: white;
+}
+
+#socialIcon {
+    color: white;
+    size-adjust: 100px;
+
+}
+
+#footerLogo {
+    width: 300px;
+    height: 300px;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.social-link {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .site-footer,
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content > div:not(:last-child):after {
+        content: none; /* Removes the border on smaller screens */
+    }
+
+    .navbar .nav-link {
+        margin-left: 10px;
+    }
+
+    .content-section,
+    .about-image,
+    .about {
+        width: 100%;
+    }
+
+    .about-image {
+        margin-bottom: 1rem;
+    }
+
+    .footer-logo {
+        order: -1; /* Put logo at the top in smaller screens */
+    }
+}

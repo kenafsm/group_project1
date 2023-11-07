@@ -59,86 +59,40 @@ h1 {
     width: 100px;
     height: 100px;
 }
-
-/* article styling */
-
-article {
-    display: contents;
-    justify-content: center;
-    text-align: justify;
-    
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }
 
-.articleTitle {
+.members-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.members {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+h1,h2 {
     text-align: center;
 }
-
-#articleDesc {
-    padding: 50px;
-}
-
-#articleImage {
-    height: auto;
-    width: 1370px;
-}
-
-/* read more section styling */
-
-.rm {
-    background-color: #AFCCA9;
-    padding: 50px;
-}
-
-.readMore {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.readMore h2 {
-    display: inline;
-}
-
-.card {
-    width: 325px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-}
-
-#cardImage {
-    height: 200px;
+img {
     width: 100%;
 }
-
-.cardContent {
-    padding: 16px;
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 200px;
 }
-
-.cardContent h3 {
-    font-size: 28px;
-    margin-bottom: 8px;
+.emailandphone {
+    border-right: 1px solid white;
 }
-
-.cardContent p {
-    color: grey;
-    font-size: 15px;
-    line-height: 1.3;
-}
-
-.cardContent .readMoreBtn {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #89BE63;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 16px;
-    color: white;
-}
-
-
 /* footer styling */
 
 footer {
